@@ -5,23 +5,69 @@
     em HTML é class = em CSS é .
 */
 
+@font-face {
+    font-family: 'm';
+    src: url(fonts/SuperMario256.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KGS';
+    src: url(fonts/KGSecondChancesSketch.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background-color: rgba(4, 205, 240, 0.534);
+    background-color: #F4EFF0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    color: rgba(255, 0, 0, 0.541);
+    color: #F52750;
+    font-family: 'KGS', 'Times New Roman', Times, serif;
 }
 
 #principal {
+    font-family: 'm', 'Times New Roman', Times, serif;
     text-align: center;
-    color: rgb(0, 217, 255);
-    background-color: red;
+    color: #F53F27;
+    background-color: #f527cc38;
     border-radius: 100px;
 }
 
 h2 {
     color: blue;
+    font-weight: bold;
+    font-family: 'KGS', 'Times New Roman', Times, serif;
+}
+
+
+.basico {
+    color: #C827F5;
+    font-family: 'KGS', 'Times New Roman', Times, serif;
+}
+
+.intermediario {
+    color: #C827F5;
+    font-family: 'KGS', 'Times New Roman', Times, serif;
+}
+
+.avancado {
+    color: #F56327;
+    font-family: 'KGS', 'Times New Roman', Times, serif;
+}
+
+.destaque {
+    background-color: rgba(168, 168, 18, 0.288);
+}
+
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
 }
 
