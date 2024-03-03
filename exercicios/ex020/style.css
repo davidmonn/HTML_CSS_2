@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+/* SELETORES PERSONALIZADOS
+    #    = id
+    .    = class
+    :    = pseudo-classe
+    ::   = pseudo-elemento
+    >    = clildren (Filho)
+*/
+
 @font-face{
     font-family: 'mr';
     src: url(fonts/SuperMario256.ttf) format(truetype);
@@ -32,7 +40,16 @@ a:active {
     color: aqua;
 }
 
+a::before {
+    content: 	'↪  ';
+    text-decoration: none;
+    font-weight: normal;
+    color: red;
+}
+
 a::after {
-    content: '  [link]';
-    text-decoration: ;
+    content: '  	↩';
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
 }
