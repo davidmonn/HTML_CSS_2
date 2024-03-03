@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'mr';
+    src: url(fonts/SuperMario256.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: 'mr', 'Times New Roman', Times, serif;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited {
+    color:rgb(226, 255, 62)
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: aqua;
+}
+
+a::after {
+    content: '  [link]';
+    text-decoration: ;
+}
