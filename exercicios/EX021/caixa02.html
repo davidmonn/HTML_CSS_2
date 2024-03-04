@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 255, 255, 0.425);
+            margin: 0px;
+        }
+
+        header {
+            background-color: rgba(102, 59, 6, 0.594);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main {
+            background-color: rgba(238, 130, 238, 0.509);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: rgba(255, 0, 0, 0.525);
+            color: violet;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        article > aside {
+            background-color: blue;
+            padding: 5px;
+        }
+
+        article {
+            background-color: rgba(0, 0, 0, 0.365);
+        }
+
+        nav {
+            background-color: burlywood;
+            padding: 12px;
+        }
+
+        /*a {
+            display: inline-block;
+            background-color: aqua;
+            width: 20px;
+            border-width: 10px;
+            border-style: groove;
+            border-color: rgb(102, 158, 56);
+
+            padding: 2px;
+            margin: 10px;
+
+            outline: 10px;
+            outline-style: double;
+            outline-color: black;            
+        }*/
+
+        nav > a {
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            background-color: aqua;
+            width: 20px;
+            border-width: 10px;
+            border-style: groove;
+            border-color: rgb(102, 158, 56);
+
+            padding: 2px;
+            margin-right: 200px;
+
+
+            outline: 10px;
+            outline-style: double;
+            outline-color: black; 
+        }
+
+        nav > a:hover {
+            color: chocolate;
+        }
+
+        nav > a:active {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">a</a>
+            <a href="#">b</a>
+            <a href="#">c</a>
+            <a href="#">d</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre HTML</h2>  <!-- Artigo tambem pode ter um titulo -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro consequatur reprehenderit neque sint velit, ab exercitationem ducimus molestiae natus doloribus odit nihil dolore molestias libero dolorum autem? Ex, laudantium corrupti!</p>
+                <aside>    <!--É um conteudo periferico, relativo ao artigo, por exemplo nome do autor-->
+                    <p>Artigo escrito por David</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por: David</p>
+    </footer>
+</body>
+</html>
