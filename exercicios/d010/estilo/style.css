@@ -11,6 +11,15 @@ Verde Escuro - #3F5C48
 Mais escuro - #332C2C
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'fdroid';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 :root {
     --cor0: #DB2D2A;
     --cor1: #449C60;
@@ -18,10 +27,74 @@ Mais escuro - #332C2C
     --cor3: #864746;
     --cor4: #3F5C48;
     --cor5: #332C2C;
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --font-android: 'fdroid', 'Times New Romaan', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    background-color: #2adb6292;
+    background-color: var(--cor2);
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-color: var(--cor1);
+}
+
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+}
+
+header > p {
+    color: white;
+}
+
+main {
+    background-color: white;
+}
+
+nav {
+    background-color: var(--cor0);
+}
+
+main h1 {
+    font-family: var(--font-android);
+}
+
+main h2 {
+    font-family: var(--font-android);
+}
+
+
+footer {
+    background-color: #332C2C;
+}
+
+footer > p {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer > p > a:hover {
+    color: #DB2D2A;
+    font-family: var(--font-android);
+}
+
+footer > p > a:active {
+    color: violet;
+}
+
+aside > ul > li {
+    font-weight: normal;
+    font-style: none;
 }
 
 /*
