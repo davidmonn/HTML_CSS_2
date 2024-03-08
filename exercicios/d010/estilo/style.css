@@ -1,5 +1,25 @@
 @charset "UTF-8";
 
+/*
+Ordem gerada pelo Adobe Cores
+
+Vermelho - #DB2D2A
+Verde - #449C60
+Verde claro - #2ADB62
+Marrom - #864746
+Verde Escuro - #3F5C48
+Mais escuro - #332C2C
+*/
+
+:root {
+    --cor0: #DB2D2A;
+    --cor1: #449C60;
+    --cor2: #2ADB62;
+    --cor3: #864746;
+    --cor4: #3F5C48;
+    --cor5: #332C2C;
+}
+
 body {
     background-color: #2adb6292;
 }
