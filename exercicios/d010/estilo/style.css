@@ -44,6 +44,7 @@ body {
     font-family: var(--font-padrao);
 }
 
+
 header {
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor5));
     min-height: 150px;
@@ -59,6 +60,7 @@ header > h1 {
     margin-bottom: 20px;
     text-shadow: 4px 5px 2px rgba(0, 0, 0, 0.495);
 }
+
 
 header > p {
     font-family: var(--font-padrao);
@@ -85,6 +87,21 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.406);
     margin-bottom: 50px;  /* Usado para desgrudar a parte inferior do rodape */ 
 }
+
+main p {
+    margin: 20px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    font-weight: bolder;
+    color: #4f0202;
+    padding: 2px 10px;
+}
+
 
 .pequena {
     max-width: 300px;
@@ -126,10 +143,27 @@ main h1 {
 
 main h2 {
     font-family: var(--font-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 8px;
 }
 
 ul {
     padding-left: 25px;
+}
+
+main a {
+    background-color: rgba(0, 255, 255, 0.422);
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 2px 10px;
+}
+
+main a:hover {
+    color: violet;
+    border-radius: 5px;
+    text-decoration: underline;
+    transition-duration: 0.5s;
 }
 
 
