@@ -86,12 +86,8 @@ main {
     margin-bottom: 50px;  /* Usado para desgrudar a parte inferior do rodape */ 
 }
 
-main img {
-    width: 100%;
-}
-
 .pequena {
-    width: 50%;
+    max-width: 300px;
     display: block;
     margin: auto;
 }
