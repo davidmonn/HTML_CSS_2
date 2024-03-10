@@ -5,46 +5,79 @@
     src: url(fontes/idroid.otf) format(opentype);
 }
 
-body {
-    background-color: rgb(238, 255, 188);
+* {
+    padding: 0;
+    margin: 0;
 }
+
 
 header {
     background-color: green;
-    border-top: px;
-}
-
-header > div {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-header > div > a {
-    text-decoration: none;
+    text-align: center;
+    padding:20px;
 }
 
 main {
     background-color: white;
-    padding-bottom: 100px;
+    padding: 20px;
+    /*border-radius: 10px;*/
+    border-bottom-left-radius: 10px; /* Parte inferior da esquerda */
+    border-bottom-right-radius: 10px; /* Parte inferior da direita */
+
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.406);
+    margin-bottom: 50px;  /* Usado para desgrudar a parte inferior do rodape */ 
 }
 
-article{
-    background-color: white;
+
+nav {
+    background-color: green;
+    padding: 20px;
 }
 
-main > h1 {
-    font-family: 'andr', 'Times New Roman', Times, serif;
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
-main > h2 {
-    font-family: 'andr', 'Times New Roman', Times, serif;
+nav > a:hover {
+    color: violet;
+    background-color: #DB2D2A;
+    padding: 11px;
+    padding-left: 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+
+article {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article > h1,h2 {
+    text-align: center;
+}
+
+.mud {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+body {
     background-color: rgb(238, 255, 188);
-    margin: 10px;
 }
 
-/*
-#android {
-    display: inline;
+
+
+ul {
+    padding-left: 50px;
 }
-*/
+

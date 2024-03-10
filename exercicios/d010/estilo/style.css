@@ -22,7 +22,7 @@ Mais escuro - #332C2C
 
 
 :root {
-    --cor0: #DB2D2A;
+    --cor0: #db2d2ab6;
     --cor1: #449C60;
     --cor2: #2ADB62;
     --cor3: #864746;
@@ -45,43 +45,79 @@ body {
 }
 
 header {
-    background-color: var(--cor1);
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 4px 5px 2px rgba(0, 0, 0, 0.495);
 }
 
 header > p {
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
     color: white;
+    max-width: 600px;
+    padding-right: 10px; /*Centralizar melhor na direita*/
+    padding-left: 10px; /*Centralizar melhor na esquerda*/
+    /* Com isso qquando a tela diminuir ele nao ira ficar espremido */
+    margin: auto;
+    text-shadow: 4px 2px 2px rgba(0, 0, 0, 0.495);
 }
 
 main {
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    border-bottom-left-radius: 10px; /* Parte inferior da esquerda */
+    border-bottom-right-radius: 10px; /* Parte inferior da direita */
 
-    min-width: 300px;
+    min-width: 280px;
     max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.406);
+    margin-bottom: 50px;  /* Usado para desgrudar a parte inferior do rodape */ 
+}
+
+main img {
+    width: 100%;
+}
+
+.pequena {
+    width: 50%;
+    display: block;
     margin: auto;
 }
 
 nav {
     background-color: var(--cor5);
     padding: 10px;
-    margin: 10px;
+    box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.432);
 }
 
 nav > a {
     text-decoration: none;
     color: white;
     font-size: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 nav > a:hover {
     color: violet;
+    background-color: #DB2D2A;
+    padding: 11px;
+    padding-left: 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition-duration: 0.5s;
 }
 
 nav > a:active {
@@ -94,6 +130,10 @@ main h1 {
 
 main h2 {
     font-family: var(--font-android);
+}
+
+ul {
+    padding-left: 25px;
 }
 
 
