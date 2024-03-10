@@ -60,10 +60,32 @@ header > p {
 
 main {
     background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
 }
 
 nav {
-    background-color: var(--cor0);
+    background-color: var(--cor5);
+    padding: 10px;
+    margin: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav > a:hover {
+    color: violet;
+}
+
+nav > a:active {
+    color: red;
 }
 
 main h1 {
