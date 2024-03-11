@@ -44,6 +44,10 @@ body {
     font-family: var(--font-padrao);
 }
 
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
 
 header {
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor5));
@@ -56,6 +60,7 @@ header {
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
+    font-weight: normal;
     font-size: 3em;
     margin-bottom: 20px;
     text-shadow: 4px 5px 2px rgba(0, 0, 0, 0.495);
@@ -139,18 +144,18 @@ nav > a:active {
 
 main h1 {
     font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.8em;
 }
 
 main h2 {
     font-family: var(--font-android);
-    font-size: 1.3em;
+    font-weight: normal;
+    font-size: 1.4em;
     background-image: linear-gradient(to right, var(--cor2), transparent);
     text-indent: 8px;
 }
 
-ul {
-    padding-left: 25px;
-}
 
 main a {
     background-color: rgba(0, 255, 255, 0.422);
@@ -166,9 +171,47 @@ main a:hover {
     transition-duration: 0.5s;
 }
 
+aside {
+    background-color: #2ADB62;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 2px 3px 20px 2px rgba(0, 0, 0, 0.397);
+}
+
+aside > h3 {
+    background-color: #449C60;
+    color: white;
+    padding: 5px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.473), transparent);
+    border-radius: 5px 5px 0px 0px;
+    margin: -10px -10px 0 -10px;
+    text-shadow: 4px 2px 3px rgba(0, 0, 0, 0.516);
+}
+
+ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0'
+}
+
+/*
+aside > ul > li {
+    font-weight: normal;
+    font-style: none;
+}
+*/
+
+/*
+ul {
+    padding-left: 25px;
+}
+*/
 
 footer {
     background-color: #332C2C;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
 }
 
 footer > p {
@@ -176,18 +219,23 @@ footer > p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+footer > p > a {
+    text-decoration: none;
+}
+
 footer > p > a:hover {
     color: #DB2D2A;
     font-family: var(--font-android);
+    text-decoration: underline;
+    transition-duration: 0.5s;
 }
 
 footer > p > a:active {
     color: violet;
 }
 
-aside > ul > li {
-    font-weight: normal;
-    font-style: none;
+.meu::after {
+    content: '\00A0\1F517';
 }
 
 /*
