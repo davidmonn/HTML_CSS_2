@@ -176,7 +176,7 @@ div.video {
     background-color: #332C2C;
     margin: 0px -20px 30px -20px;
     padding: 20px;
-    padding-bottom: 50%;
+    padding-bottom: 59%;
     position: relative;
 }
 
@@ -184,8 +184,8 @@ div.video > iframe {
     position: absolute;
     top: 5%;
     left: 5%;
-    bottom: 90%;
-    right: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 aside {
