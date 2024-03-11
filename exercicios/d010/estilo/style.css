@@ -120,10 +120,11 @@ nav {
     box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.432);
 }
 
+
 nav > a {
     text-decoration: none;
-    color: white;
-    font-size: 20px;
+    color: var(--cor2);
+    font-size: 15px;
     padding: 20px;
     text-align: center;
 }
@@ -169,6 +170,22 @@ main a:hover {
     border-radius: 5px;
     text-decoration: underline;
     transition-duration: 0.5s;
+}
+
+div.video {
+    background-color: #332C2C;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    bottom: 90%;
+    right: 5%;
 }
 
 aside {
